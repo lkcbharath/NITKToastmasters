@@ -15,10 +15,10 @@
                     android:id="@+id/nav_next_meeting"
                     android:icon="@drawable/ic_next_meeting"
                     android:title="@string/next_meeting"/>
-                <item
-                    android:id="@+id/nav_take_up_role"
-                    android:icon="@drawable/ic_take_up_role"
-                    android:title="@string/take_up_role"/>
+                <!--<item-->
+                    <!--android:id="@+id/nav_take_up_role"-->
+                    <!--android:icon="@drawable/ic_take_up_role"-->
+                    <!--android:title="@string/take_up_role"/>-->
                 <item
                     android:id="@+id/nav_timer"
                     android:icon="@drawable/ic_timer"

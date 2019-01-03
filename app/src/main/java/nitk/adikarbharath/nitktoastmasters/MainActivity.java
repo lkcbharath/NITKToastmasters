@@ -96,18 +96,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     case R.id.nav_timer:
                         selectFragment(new TimerFragment(),"TM Timer");
                         break;
-                    case R.id.nav_take_up_role:
-                        try {
-                            Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_next_meeting_list_view);
-                            if (fragment != null) {
-                                getSupportFragmentManager().beginTransaction().remove(fragment).commit();
-                            }
-                        }
-                        catch (Exception e) {
-//                            Log.d("registerRole",e.toString());
-                        }
-                        selectFragment(new TakeUpRoleFragment(),"Take Up A Role");
-                        break;
+//                    case R.id.nav_take_up_role:
+//                        try {
+//                            Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_next_meeting_list_view);
+//                            if (fragment != null) {
+//                                getSupportFragmentManager().beginTransaction().remove(fragment).commit();
+//                            }
+//                        }
+//                        catch (Exception e) {
+////                            Log.d("registerRole",e.toString());
+//                        }
+//                        selectFragment(new TakeUpRoleFragment(),"Take Up A Role");
+//                        break;
                 }
             }
         }, 250);
