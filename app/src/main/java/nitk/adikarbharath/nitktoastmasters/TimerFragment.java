@@ -30,7 +30,7 @@ public class TimerFragment extends Fragment{
 
     // To-do: Clean up code and make it readable!!
 
-    TextView timer;
+    TextView timer,timer_info;
     Button start, pause, reset;
     long MillisecondTime, StartTime, TimeBuff, UpdateTime = 0L ;
     Handler handler;
@@ -168,12 +168,15 @@ public class TimerFragment extends Fragment{
 
         start = v.findViewById(R.id.button_start);
         reset = v.findViewById(R.id.button_reset);
+        timer_info = v.findViewById(R.id.textView_timer_info);
+
         final NumberPicker numberPicker1 = v.findViewById(R.id.numberPicker1);
         final NumberPicker numberPicker2 = v.findViewById(R.id.numberPicker2);
         final Spinner spinner = v.findViewById(R.id.spinner_timer);
 
         start.setVisibility(visibility);
         reset.setVisibility(visibility);
+        timer_info.setVisibility(visibility);
         spinner.setVisibility(visibility);
         numberPicker1.setVisibility(visibility);
         numberPicker2.setVisibility(visibility);

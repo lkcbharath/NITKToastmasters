@@ -86,13 +86,13 @@
         change your password (or have forgotten it), use this button.</string>
 
     <!--Contact-->
+    <!--Fields should be made dynamic in future.-->
     <string name="contact_president">President:</string>
-    <string name="contact_president_name">Agnes Sharan</string>
-    <string name="contact_president_contact">+91 96113 44476</string>
+    <string name="contact_president_name">Tirth Savla</string>
+    <string name="contact_president_contact">+91 99208 04880</string>
     <string name="contact_vp_edu">Vice-President Education:</string>
-    <string name="contact_vp_edu_name">Tirth Savla</string>
-    <string name="contact_vp_edu_contact">+91 99208 04880</string>
-    <!--Above fields should be dynamic in future.-->
+    <string name="contact_vp_edu_name">Yash Khivsara</string>
+    <string name="contact_vp_edu_contact">+91 86918 18369</string>
     <string name="contact_club_handles">More Links:</string>
     <string name="contact_club_handles_fb">www.facebook.com/NITKToastmasters</string>
     <string name="contact_club_handles_ig">www.instagram.com/nitk_toastmasters</string>

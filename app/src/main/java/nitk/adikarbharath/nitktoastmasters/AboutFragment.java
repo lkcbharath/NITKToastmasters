@@ -13,23 +13,37 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class AboutFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_about,container,false);
+
         TextView versionName = v.findViewById(R.id.textView_versionName);
         String version = "Version " + BuildConfig.VERSION_NAME + " (beta release)";
         versionName.setText(version);
 
+        TextView privacy_policy = v.findViewById(R.id.textView_privacy_policy);
+        final String url_privacy_policy = "https://sites.google.com/view/nitktoastmastersprivacypolicy";
+        privacy_policy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openInBrowser(url_privacy_policy);
+            }
+        });
+
         ImageView imageView_github = v.findViewById(R.id.imageView_github);
         ImageView imageView_instagram = v.findViewById(R.id.imageView_instagram);
         ImageView imageView_linkedin = v.findViewById(R.id.imageView_linkedin);
+        ImageView imageView_website = v.findViewById(R.id.imageView_website);
 
         final String url_github = "https://github.com/lkcbharath";
         final String url_instagram = "https://www.instagram.com/bharath_adikar";
         final String url_linkedin = "https://www.linkedin.com/in/lkcbharath";
+        final String url_website = "https://lkcbharath.github.io";
 
         imageView_github.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +63,13 @@ public class AboutFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 openInBrowser(url_linkedin);
+            }
+        });
+
+        imageView_website.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openInBrowser(url_website);
             }
         });
 
